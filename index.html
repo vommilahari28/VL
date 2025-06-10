@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Bus Login</title>
+  <link rel="stylesheet" href="f2.css">
+</head>
+<body>
+  <!-- Bus Animation -->
+  <div class="bus" id="bus"></div>
+
+  <!-- Login Container -->
+  <div class="login-container" id="loginContainer">
+    <div class="login-card">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button onclick="handleLogin()">Login</button>
+    </div>
+  </div>
+
+  <!-- Success Message -->
+  <div class="success-message" id="successMessage">
+    🎉 Login Successful! 🎉
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
