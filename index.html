@@ -17,6 +17,7 @@
     EMAIL : <input type="email" name="email" id="email" placeholder="email">  <br><br>
     ADDRESS : <input type="text" name="address" id="address" placeholder="address"> <br><br>
     <button type="submit">SUBMIT</button>
+        <a href="LoGIN FORM">
     </fieldset>
     </form>
 
@@ -50,6 +51,34 @@
                 return false;
             }
             else{
+                alert("Registration successfull");
+                return true;
+            }
+        }
+</script>
+
+    <body bgcolor="pink">
+    <h1><center><b><i>LOGIN FORM</i></b></center></h1>
+    <form onsubmit="return validateform()" method="post">
+    <fieldset ><legend><b>registeration details</b></legend>
+    USERNAME : <input type="text" name="fname" id="fname" placeholder="username"> <br><br>
+    PASSWORD : <input type="password" name="password" id="password" placeholder="password"> <br><br>
+        <button type="submit">SUBMIT</button>
+    </fieldset>
+    </form>
+         <script>
+        function validateform(){
+            const fname=document.getElementById('fname').value;
+            const password=document.getElementById('password').value;
+             if(fname===""){
+                alert("Username should not be empty");
+                return false;
+            }
+            if(password >= 6){
+                alert("Password should contain more than six characters");
+                return false;
+            }
+                else{
                 alert("Registration successfull");
                 return true;
             }
