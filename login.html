@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <h1><center><b><i>LOGIN PAGE</i></b></center></h1>
+    <form onsubmit="return validateform()" method="post">
+    <fieldset ><legend><b>login details</b></legend>
+    USERNAME : <input type="text" name="fname" id="fname" placeholder="username"> <br><br>
+    PASSWORD : <input type="password" name="password" id="password" placeholder="password"> 
+    <button type="submit">SUBMIT</button>
+    </fieldset>
+    </form>
+
+    <script>
+        function validateform(){
+            const fname=document.getElementById('fname').value;
+            const password=document.getElementById('password').value;
+             if(fname===""){
+                alert("Username should not be empty");
+                return false;
+            }
+            if(password >= 6){
+                alert("Password should contain more than six characters");
+                return false;
+            }
+             else{
+                alert("Login successfull");
+                return true;
+            }
+        }
+    </body>
+</html>
